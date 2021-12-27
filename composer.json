@@ -1,6 +1,6 @@
 {
     "name": "daygarcia/laravel-magalu",
-    "description": "Um pacote",
+    "description": "Um pacote de laravel desenvolvido para consumir as APIs da Magazine Luiza (Integracommerce)",
     "type": "library",
     "license": "MIT",
     "autoload": {

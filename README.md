@@ -32,7 +32,6 @@ use Illuminate\Http\Request;
 $config = new Configuration([
     'user'          => config('magalu.user'),
     'password'      => config('magalu.password'),
-    'redirect_uri'  => 'https://localhost.com',
     'basic_token'   => $request->cookie('basic_token') ?? null,
 ]);
 
