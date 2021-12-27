@@ -1,6 +1,6 @@
-# Mercado Livre Laravel
+# Magazine Luiza Laravel
 
-<h4>A package to connect to Mercado Livre API</h4>
+<h4>A package to connect to Magazine Luiza API</h4>
 
 ## Requirements
 
