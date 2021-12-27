@@ -10,6 +10,7 @@ class PromotionApi extends Api
     public function __construct(Configuration $configuration)
     {
         $this->configuration = $configuration;
+        parent::__construct();
     }
 
     public function createPromotion(array $data): array

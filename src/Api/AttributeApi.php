@@ -10,6 +10,7 @@ class AttributeApi extends Api
     public function __construct(Configuration $configuration)
     {
         $this->configuration = $configuration;
+        parent::__construct();
     }
 
     public function getAttribute(int $page, int $per_page)

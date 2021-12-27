@@ -10,6 +10,7 @@ class ProductApi extends Api
     public function __construct(Configuration $configuration)
     {
         $this->configuration = $configuration;
+        parent::__construct();
     }
 
     public function getProducts(int $page = null, int $per_page = null): array

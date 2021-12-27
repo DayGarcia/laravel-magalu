@@ -10,6 +10,7 @@ class SkuApi extends Api
     public function __construct(Configuration $configuration)
     {
         $this->configuration = $configuration;
+        parent::__construct();
     }
 
     public function getSkus(int $page, int $per_page, string $status): array

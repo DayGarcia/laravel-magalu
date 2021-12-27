@@ -10,6 +10,7 @@ class CategoryApi extends Api
     public function __construct(Configuration $configuration)
     {
         $this->configuration = $configuration;
+        parent::__construct();
     }
 
     public function getCategories(int $page, int $per_page, int $level): array
