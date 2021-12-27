@@ -12,7 +12,7 @@ class ProductApi extends Api
         $this->configuration = $configuration;
     }
 
-    public function getProducts(int $page, int $per_page, string $status): array
+    public function getProducts(int $page, int $per_page): array
     {
         $path = 'Product';
         $paging = [

@@ -12,12 +12,13 @@ class CategoryApi extends Api
         $this->configuration = $configuration;
     }
 
-    public function getCategories(int $page, int $per_page): array
+    public function getCategories(int $page, int $per_page, int $level): array
     {
         $path = 'Category';
         $paging = [
             'page'      => $page ?? 1,
-            'perPage'  => $per_page ?? 10,
+            'perPage'   => $per_page ?? 10,
+            'level'     => $level ?? 0,
         ];
         return $this->get($this->configuration->getAccessToken(), $path, $paging);
     }
