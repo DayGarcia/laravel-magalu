@@ -1,6 +1,6 @@
 <?php
 
-namespace DayGarcia\LaravelMagalu;
+namespace LaravelMagalu;
 
 use Illuminate\Support\ServiceProvider;
 use DayGarcia\LaravelMagalu\Magalu;
