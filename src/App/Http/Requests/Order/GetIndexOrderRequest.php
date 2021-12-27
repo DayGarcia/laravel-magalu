@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Order;
+namespace App\Http\Requests\LaravelMagalu\Order;
 
 use Illuminate\Foundation\Http\FormRequest;
 

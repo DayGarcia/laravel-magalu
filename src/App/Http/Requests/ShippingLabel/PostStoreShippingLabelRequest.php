@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\ShippingLabel;
+namespace App\Http\Requests\LaravelMagalu\ShippingLabel;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Stock;
+namespace App\Http\Requests\LaravelMagalu\Stock;
 
 use Illuminate\Foundation\Http\FormRequest;
 

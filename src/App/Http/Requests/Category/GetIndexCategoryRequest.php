@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Category;
+namespace App\Http\Requests\LaravelMagalu\Category;
 
 use Illuminate\Foundation\Http\FormRequest;
 

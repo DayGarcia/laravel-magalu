@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Promotion;
+namespace App\Http\Requests\LaravelMagalu\Promotion;
 
 use Illuminate\Foundation\Http\FormRequest;
 

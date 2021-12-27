@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Price;
+namespace App\Http\Requests\LaravelMagalu\Price;
 
 use Illuminate\Foundation\Http\FormRequest;
 

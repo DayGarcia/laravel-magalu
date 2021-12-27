@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Attribute;
+namespace App\Http\Requests\LaravelMagalu\Attribute;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Magalu\Sku;
+namespace App\Http\Requests\LaravelMagalu\Sku;
 
 use Illuminate\Foundation\Http\FormRequest;
 
