@@ -19,24 +19,24 @@ class ProductApi extends Api
             'page'      => $page ?? 1,
             'perPage'   => $per_page ?? 10,
         ];
-        return $this->get($this->configuration->getAccessToken(), $path, $paging);
+        return $this->get($this->configuration->getBasicToken(), $path, $paging);
     }
 
     public function getProduct(string $product_id): array
     {
         $path = "Product/{$product_id}";
-        return $this->get($this->configuration->getAccessToken(), $path);
+        return $this->get($this->configuration->getBasicToken(), $path);
     }
 
     public function updateProduct(array $data): array
     {
         $path = 'Product';
-        return $this->put($this->configuration->getAccessToken(), $path, $data);
+        return $this->put($this->configuration->getBasicToken(), $path, $data);
     }
 
     public function createProduct(array $data): array
     {
         $path = 'Product';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
 }

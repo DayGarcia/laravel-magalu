@@ -19,6 +19,6 @@ class AttributeApi extends Api
             'page'      => $page ?? 1,
             'per_page'  => $per_page ?? 10,
         ];
-        return $this->get($this->configuration->getAccessToken(), $path, $paging);
+        return $this->get($this->configuration->getBasicToken(), $path, $paging);
     }
 }

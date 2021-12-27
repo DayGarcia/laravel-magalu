@@ -15,6 +15,6 @@ class StockApi extends Api
     public function updateStock(array $data): array
     {
         $path = 'Stock';
-        return $this->put($this->configuration->getAccessToken(), $path, $data);
+        return $this->put($this->configuration->getBasicToken(), $path, $data);
     }
 }

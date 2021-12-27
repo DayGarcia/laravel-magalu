@@ -20,18 +20,18 @@ class OrderApi extends Api
             'perPage'   => $per_page ?? 10,
             'status'    => $status ?? 'APPROVED',
         ];
-        return $this->get($this->configuration->getAccessToken(), $path, $paging);
+        return $this->get($this->configuration->getBasicToken(), $path, $paging);
     }
 
     public function getOrder(string $order_id): array
     {
         $path = "Order/{$order_id}";
-        return $this->get($this->configuration->getAccessToken(), $path);
+        return $this->get($this->configuration->getBasicToken(), $path);
     }
 
     public function updateOrder(array $data): array
     {
         $path = 'Order';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
 }

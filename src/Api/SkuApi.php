@@ -19,24 +19,24 @@ class SkuApi extends Api
             'page'      => $page ?? 1,
             'perPage'   => $per_page ?? 10,
         ];
-        return $this->get($this->configuration->getAccessToken(), $path, $paging);
+        return $this->get($this->configuration->getBasicToken(), $path, $paging);
     }
 
     public function getSku(string $sku_id): array
     {
         $path = "Sku/{$sku_id}";
-        return $this->get($this->configuration->getAccessToken(), $path);
+        return $this->get($this->configuration->getBasicToken(), $path);
     }
 
     public function updateSku(array $data): array
     {
         $path = 'Sku';
-        return $this->put($this->configuration->getAccessToken(), $path, $data);
+        return $this->put($this->configuration->getBasicToken(), $path, $data);
     }
 
     public function createSku(array $data): array
     {
         $path = 'Sku';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
 }

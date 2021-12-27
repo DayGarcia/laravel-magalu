@@ -15,6 +15,6 @@ class PromotionApi extends Api
     public function createPromotion(array $data): array
     {
         $path = 'Promotion';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
 }

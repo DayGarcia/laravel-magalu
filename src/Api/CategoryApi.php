@@ -20,18 +20,18 @@ class CategoryApi extends Api
             'perPage'   => $per_page ?? 10,
             'level'     => $level ?? 0,
         ];
-        return $this->get($this->configuration->getAccessToken(), $path, $paging);
+        return $this->get($this->configuration->getBasicToken(), $path, $paging);
     }
 
     public function getCategory(string $category_id): array
     {
         $path = "Category/{$category_id}";
-        return $this->get($this->configuration->getAccessToken(), $path);
+        return $this->get($this->configuration->getBasicToken(), $path);
     }
 
     public function createCategory(array $data): array
     {
         $path = 'Category';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
 }

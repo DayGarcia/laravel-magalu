@@ -15,12 +15,12 @@ class ShippingLabelApi extends Api
     public function createShippingLabel(array $data): array
     {
         $path = 'Order/ShippingLabels';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
     /* 
     public function downloadShippingLabel(string $url)
     {
         $path = $url;
-        return $this->download($this->configuration->getAccessToken(), $path);
+        return $this->download($this->configuration->getBasicToken(), $path);
     } */
 }

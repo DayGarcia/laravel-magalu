@@ -16,6 +16,6 @@ class PriceApi extends Api
     public function updatePrice(array $data): array
     {
         $path = 'Price';
-        return $this->post($this->configuration->getAccessToken(), $path, $data);
+        return $this->post($this->configuration->getBasicToken(), $path, $data);
     }
 }
