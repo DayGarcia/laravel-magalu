@@ -17,7 +17,7 @@ class Configuration
         $this->password = $config['password'] ?? null;
         $this->basic_token = $config['basic_token'] ?? null;
 
-        !empty($this->access_token) ? $this->setBasicToken($this->basic_token) : $this->generateBasicToken();
+        !empty($this->basic_token) ? $this->setBasicToken($this->basic_token) : $this->generateBasicToken();
     }
 
     public function generateBasicToken(): string
