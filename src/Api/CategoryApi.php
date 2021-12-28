@@ -13,7 +13,7 @@ class CategoryApi extends Api
         parent::__construct();
     }
 
-    public function getCategories(int $page, int $per_page, int $level): array
+    public function getCategories(int $page = null, int $per_page = null, int $level = null): array
     {
         $path = 'Category';
         $paging = [
