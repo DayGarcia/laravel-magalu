@@ -33,6 +33,6 @@ class OrderApi extends Api
     public function updateOrder(array $data): array
     {
         $path = 'Order';
-        return $this->post($this->configuration->getBasicToken(), $path, $data);
+        return $this->put($this->configuration->getBasicToken(), $path, $data);
     }
 }
