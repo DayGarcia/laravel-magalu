@@ -20,12 +20,16 @@ class Api
 
     public function post(string $token, string $path, array $data, array $headers = []): array
     {
-        return Http::withHeaders(array_merge(['Accept' => 'application/json', 'Authorization' => "Basic {$token}"], $headers))->post($this->url . $path, $data)->throw()->json();
+        $response = Http::withHeaders(array_merge(['Accept' => 'application/json', 'Authorization' => "Basic {$token}"], $headers))->post($this->url . $path, $data)->throw()->json();
+        if (!is_array($response)) return [$response];
+        return $response;
     }
 
     public function put(string $token, string $path, array $data, array $headers = []): array
     {
-        return Http::withHeaders(array_merge(['Accept' => 'application/json', 'Authorization' => "Basic {$token}"], $headers))->put($this->url . $path, $data)->throw()->json();
+        $response = Http::withHeaders(array_merge(['Accept' => 'application/json', 'Authorization' => "Basic {$token}"], $headers))->put($this->url . $path, $data)->throw()->json();
+        if (!is_array($response)) return [$response];
+        return $response;
     }
 
     public function delete(string $token, string $path, array $headers = []): array

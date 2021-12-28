@@ -13,7 +13,7 @@ class SkuApi extends Api
         parent::__construct();
     }
 
-    public function getSkus(int $page, int $per_page, string $status): array
+    public function getSkus(int $page = null, int $per_page = null): array
     {
         $path = 'Sku';
         $paging = [
