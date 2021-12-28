@@ -13,7 +13,7 @@ class OrderApi extends Api
         parent::__construct();
     }
 
-    public function getOrders(int $page, int $per_page, string $status): array
+    public function getOrders(int $page = null, int $per_page = null, string $status = null): array
     {
         $path = 'OrderQueue';
         $paging = [
