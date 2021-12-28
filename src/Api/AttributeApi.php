@@ -13,7 +13,7 @@ class AttributeApi extends Api
         parent::__construct();
     }
 
-    public function getAttribute(int $page, int $per_page)
+    public function getAttributes(int $page = null, int $per_page = null)
     {
         $path = 'Attribute';
         $paging = [
